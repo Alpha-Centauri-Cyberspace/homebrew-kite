@@ -1,20 +1,20 @@
 class Kite < Formula
-  desc "Universal webhook adapter CLI"
+  desc "Event delivery CLI for developers and AI agents"
   homepage "https://github.com/Alpha-Centauri-Cyberspace/kite-cli"
-  version "0.1.2"
+  version "0.2.2"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://pub-8c89023eee8443d0acfbb4cdc0d65494.r2.dev/releases/v0.1.2/kite-darwin-arm64.tar.gz"
-      sha256 "5d3907582b0e1b32a1c9ffa035cb59255c8b87a9298b8f60ed0754dba4eb045b"
+      url "https://github.com/Alpha-Centauri-Cyberspace/kite-cli/releases/download/v0.2.2/kite-darwin-arm64.tar.gz"
+      sha256 "82dfe3dee4dd98b27552c10750a3de38a1ed322c155b69233297d8a6389c5e32"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://pub-8c89023eee8443d0acfbb4cdc0d65494.r2.dev/releases/v0.1.2/kite-linux-x86_64.tar.gz"
-      sha256 "660836e252bd98fca60d83bd1c786c4b98d0b184105341f5f59e63a24593c194"
+      url "https://github.com/Alpha-Centauri-Cyberspace/kite-cli/releases/download/v0.2.2/kite-linux-x86_64.tar.gz"
+      sha256 "2ec5a95dc4a9bc70ec73de02d375ceb2adc6d05dbabd9d0a3aeb5feb6bd40692"
     end
   end
 
@@ -23,6 +23,6 @@ class Kite < Formula
   end
 
   test do
-    assert_match "kite", shell_output("#{bin}/kite --version")
+    assert_match version.to_s, shell_output("#{bin}/kite --version")
   end
 end
