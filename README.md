@@ -19,7 +19,7 @@ manifest and proposes the formula update as a pull request.
 Supported platforms:
 
 - macOS, Apple Silicon (`arm64`)
-- Linux, x86_64
+- Linux, x86_64 with glibc 2.34 or newer
 
 If you need another platform, please open an issue on [`kite-cli`](https://github.com/Alpha-Centauri-Cyberspace/kite-cli/issues).
 

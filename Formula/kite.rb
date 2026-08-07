@@ -19,6 +19,9 @@ class Kite < Formula
   end
 
   def install
+    if OS.linux? && OS::Linux::Glibc.system_version < Version.new("2.34")
+      odie "Kite requires glibc 2.34 or newer on Linux."
+    end
     bin.install "kite"
   end
 
