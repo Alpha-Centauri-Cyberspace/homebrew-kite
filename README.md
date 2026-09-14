@@ -11,12 +11,15 @@ brew install kite
 
 ## What ships here
 
-This tap's `Formula/kite.rb` points at the pre-built release tarballs published by [`kite-cli`](https://github.com/Alpha-Centauri-Cyberspace/kite-cli) on every tagged release. The formula is regenerated automatically by `kite-cli`'s `publish-homebrew.yml` workflow — do not hand-edit `Formula/kite.rb` for version bumps.
+This tap's `Formula/kite.rb` points at checksum-verified release tarballs
+published by [`kite-cli`](https://github.com/Alpha-Centauri-Cyberspace/kite-cli).
+After an approved CLI release, `publish-homebrew.yml` validates its immutable
+manifest and proposes the formula update as a pull request.
 
 Supported platforms:
 
 - macOS, Apple Silicon (`arm64`)
-- Linux, x86_64
+- Linux, x86_64 with glibc 2.34 or newer
 
 If you need another platform, please open an issue on [`kite-cli`](https://github.com/Alpha-Centauri-Cyberspace/kite-cli/issues).
 
