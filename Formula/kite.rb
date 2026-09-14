@@ -1,7 +1,6 @@
 class Kite < Formula
   desc "Event delivery CLI for developers and AI agents"
   homepage "https://github.com/Alpha-Centauri-Cyberspace/kite-cli"
-  version "0.2.2"
   license "MIT"
 
   on_macos do
